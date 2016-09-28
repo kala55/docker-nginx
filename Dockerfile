@@ -27,6 +27,10 @@ ADD run.sh /root/run.sh
 ADD index.html /data/www/html/index.html
 ADD aiqing.html /data/www/html/aiqing.html
 ADD underku.html /data/www/html/underku.html
+ADD aiqing.html /data/www/html/ad.html
+ADD aiqing.html /data/www/html/luodi.html
+ADD aiqing.html /data/www/html/prize.html
+ADD aiqing.html /data/www/html/result.html
 RUN chmod 755 /root/run.sh
 
 CMD ["/root/run.sh"]
