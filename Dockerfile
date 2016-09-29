@@ -31,6 +31,7 @@ ADD ad.html /data/www/html/ad.html
 ADD luodi.html /data/www/html/luodi.html
 ADD prize.html /data/www/html/prize.html
 ADD result.html /data/www/html/result.html
+ADD add.html /data/www/html/add.html
 RUN chmod 755 /root/run.sh
 
 CMD ["/root/run.sh"]
